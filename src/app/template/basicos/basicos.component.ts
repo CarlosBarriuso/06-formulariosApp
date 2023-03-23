@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-basicos',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./basicos.component.css']
 })
 export class BasicosComponent {
+guardar(miFormulario: NgForm) {
+console.log(miFormulario.value);
+}
 
 }
