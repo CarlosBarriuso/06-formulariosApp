@@ -26,5 +26,6 @@ export class BasicosComponent {
   //guardar(miFormulario: NgForm) {
   guardar() {
     console.log(this.miFormulario);
+    this.miFormulario.resetForm();
   }
 }
