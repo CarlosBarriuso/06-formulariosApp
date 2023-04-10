@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./dinamicos.component.css']
 })
 export class DinamicosComponent {
-
+a:number =0;
 }
