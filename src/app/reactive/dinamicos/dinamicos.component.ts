@@ -46,5 +46,9 @@ export class DinamicosComponent {
       return;
     }
     console.log(this.miFormulario.value);
-}
+  }
+
+  borrar( indice:number){
+    this.favoritosArr.removeAt(indice);
+  }
 }
