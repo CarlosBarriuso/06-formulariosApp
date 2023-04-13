@@ -26,5 +26,14 @@ export class SwitchesComponent implements OnInit{
         ...this.persona,
         terminos: false
       });
+      //para sincronizar los datos entre el formulario y la persona, menos los terminos
+      this.miFormulario.valueChanges.subscribe( ({ terminos, ...restoDeArgumentos}) => {
+        this.persona = restoDeArgumentos;
+      })
   }
+
+  guardar() {
+    const formValue = {...this.miFormulario.value}
+  }
+
 }
